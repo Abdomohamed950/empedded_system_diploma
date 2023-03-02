@@ -1,4 +1,5 @@
 #include"stdio.h"
+#include<math.h>
 
 void rev(int ar[],int ar1[],int ar_size)
 {
@@ -48,12 +49,25 @@ int search(int arr[], int size , int key)
             return 0;
 }
 
-int main()
+int checkpower(unsigned int n)
 {
-    int arr[8]={1,2,3,4,5};
-    int arr2[8]={6,7,8,9,10,11,12,13};
-    search(arr,5,1);
+    double i = log(n)/log(3);
+    return i == trunc(i);
+}
 
 
-    return 0;
+int myfun ()
+{
+        int y=20;
+return y;
+}
+
+
+void myfun (int arr[]){
+int size=sizeof (arr) /sizeof (arr[0]) ;
+printf ("%d ", size) ;
+}
+int main (){
+printf("%d %d %d",sizeof (3.14), sizeof (3.14f) , sizeof ("3.14") )
+return 0:
 }

@@ -68,13 +68,29 @@
 
 #include"stdio.h"
 #include"string.h"
+
+#include"stdio.h"
+
+int sum (int num)
+{
+    int new_num=0;
+    if(num>0){
+        new_num+=(num%10);
+        num=num/10;
+        new_num+= sum(num);
+    }
+    else
+        return 0;
+    return new_num;
+}
+
+
 int main()
 {
-int i,j;
-i=j=3,4;
-while(--i&&j++)
-printf("%d%d",i,j);
-strcp
-return 0;
+
+    printf("%d",sum(123));
+
+    return 0;
 }
+
 
