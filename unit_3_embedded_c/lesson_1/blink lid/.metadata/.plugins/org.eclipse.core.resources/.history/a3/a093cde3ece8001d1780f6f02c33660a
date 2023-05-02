@@ -38,6 +38,7 @@ typedef volatile signed short           vsint16;
 typedef volatile signed long            vsint32;
 typedef volatile signed long long       vsint64;
 
+typedef volatile signed char*           pvsint8;
 
 
 #endif

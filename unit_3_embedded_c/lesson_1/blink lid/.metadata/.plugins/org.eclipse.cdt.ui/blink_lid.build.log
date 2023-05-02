@@ -1,0 +1,13 @@
+16:52:34 **** Build of configuration Debug for project blink_lid ****
+make -j4 all 
+arm-none-eabi-size   blink_lid.elf 
+arm-none-eabi-objcopy  -O ihex  blink_lid.elf  "blink_lid.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	blink_lid.elf
+Finished building: default.size.stdout
+ 
+Finished building: blink_lid.hex
+ 
+
+16:52:34 Build Finished. 0 errors, 0 warnings. (took 717ms)
+

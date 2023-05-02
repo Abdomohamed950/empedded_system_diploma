@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;blink_lid/Src/stm32f103c6ports&apos; to &apos;stm32f103c6ports,h&apos;" description="Rename resource &apos;stm32f103c6ports&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/stm32f103c6ports" name="stm32f103c6ports,h" stamp="1683032165647" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;blink_lid/Src/stm32f103c6ports,h&apos; to &apos;stm32f103c6ports.h&apos;" description="Rename resource &apos;stm32f103c6ports,h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/stm32f103c6ports,h" name="stm32f103c6ports.h" stamp="1683032179196" updateReferences="true"/>
+</session>
