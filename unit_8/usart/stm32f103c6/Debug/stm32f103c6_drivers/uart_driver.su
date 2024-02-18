@@ -1,0 +1,8 @@
+uart_driver.c:21:10:get_sys_clk	4	static
+uart_driver.c:39:10:get_AHB_clk	8	static
+uart_driver.c:43:10:get_APB1_clk	8	static
+uart_driver.c:47:10:get_APB2_clk	8	static
+uart_driver.c:52:6:mcal_uart_init	24	static
+uart_driver.c:93:6:mcal_uart_send_data	16	static
+uart_driver.c:99:6:mcal_uart_receive_data	16	static
+uart_driver.c:105:6:mcal_uart_pin_init	24	static

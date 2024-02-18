@@ -1,0 +1,8 @@
+gpio_driver.c:13:10:pos	16	static
+gpio_driver.c:104:6:MCAL_GPIO_DEINIT	16	static
+gpio_driver.c:133:9:MCAL_GPIO_READPIN	16	static
+gpio_driver.c:142:9:MCAL_GPIO_READPORT	16	static
+gpio_driver.c:147:6:MCAL_GPIO_WRITEPIN	24	static
+gpio_driver.c:160:6:MCAL_GPIO_WRITEPORT	16	static
+gpio_driver.c:165:6:MCAL_GPIO_TOGGLEPIN	16	static
+gpio_driver.c:173:6:MCAL_GPIO_INIT	32	static

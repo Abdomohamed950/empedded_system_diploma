@@ -1,0 +1,191 @@
+12:27:58 **** Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:21:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-size   stm32f401re.elf 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+12:29:18 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+Finished building: stm32f401re.list
+ 
+Finished building: stm32f401re.bin
+ 
+ 
+12:31:44 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+../STM32F401RE_DRIVER/GPIO_DRIVER.c:9:10: fatal error: /INC/STM32F401RE.h: No such file or directory
+ #include </INC/STM32F401RE.h>
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [STM32F401RE_DRIVER/subdir.mk:18: STM32F401RE_DRIVER/GPIO_DRIVER.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+12:32:23 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+ 
+12:33:44 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+../Src/main.c:21:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+12:37:41 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+12:38:32 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+12:54:53 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.bin
+Finished building: stm32f401re.list
+ 
+ 
+12:56:05 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+ 
+12:56:34 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+12:57:07 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+12:57:29 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+In file included from ../STM32F401RE_DRIVER/GPIO_DRIVER.c:9:0:
+D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC/STM32F401RE.h:113:19: error: expected identifier or '(' before 'RCC_R'
+ #define RCC     ((RCC_R *)RCC_BASE)
+                   ^
+../STM32F401RE_DRIVER/GPIO_DRIVER.c:13:1: note: in expansion of macro 'RCC'
+ RCC->APB2ENR |= 1<<2 ;
+ ^~~
+D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC/STM32F401RE.h:38:20: error: expected ')' before numeric constant
+ #define RCC_BASE   0x40021000
+                    ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC/STM32F401RE.h:113:27: note: in expansion of macro 'RCC_BASE'
+ #define RCC     ((RCC_R *)RCC_BASE)
+                           ^~~~~~~~
+../STM32F401RE_DRIVER/GPIO_DRIVER.c:13:1: note: in expansion of macro 'RCC'
+ RCC->APB2ENR |= 1<<2 ;
+ ^~~
+make: *** [STM32F401RE_DRIVER/subdir.mk:18: STM32F401RE_DRIVER/GPIO_DRIVER.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:06:26 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+../STM32F401RE_DRIVER/GPIO_DRIVER.c: In function 'gpio_init':
+../STM32F401RE_DRIVER/GPIO_DRIVER.c:16:1: error: expected identifier before '}' token
+ }
+ ^
+make: *** [STM32F401RE_DRIVER/subdir.mk:18: STM32F401RE_DRIVER/GPIO_DRIVER.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.

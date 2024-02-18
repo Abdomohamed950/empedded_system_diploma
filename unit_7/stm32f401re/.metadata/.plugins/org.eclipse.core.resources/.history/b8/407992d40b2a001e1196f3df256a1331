@@ -1,0 +1,14 @@
+/*
+ * GPIO_DRIVER.h
+ *
+ *  Created on: Jul 24, 2023
+ *      Author: abdom
+ */
+
+#ifndef INC_GPIO_DRIVER_H_
+#define INC_GPIO_DRIVER_H_
+#include <STM32F401RE.h>
+
+void gpiox_init();
+
+#endif /* INC_GPIO_DRIVER_H_ */

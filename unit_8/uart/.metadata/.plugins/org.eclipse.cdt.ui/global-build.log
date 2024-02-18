@@ -1,0 +1,2213 @@
+17:40:20 **** Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-size   stm32f103c6.elf 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+17:52:54 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+18:03:06 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+18:05:58 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+18:06:25 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+18:06:35 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:57:12 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:23:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+09:57:14 **** Clean-only build of configuration Debug for project stm32f401re ****
+make -j4 clean 
+rm -rf *
+ 
+09:57:14 **** Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:21:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+ #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+  ^~~~~~~
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-size   stm32f401re.elf 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.bin
+Finished building: stm32f401re.list
+ 
+ 
+09:58:18 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:58:18 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.list
+Finished building: stm32f401re.bin
+ 
+ 
+09:28:00 **** Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:28:01 **** Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:40:46 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:40:46 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:41:32 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:41:32 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    656	      8	   1568	   2232	    8b8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:42:07 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:42:08 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:54:52 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:54:52 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:57:18 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:57:19 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:57:48 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:57:48 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+09:58:06 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+09:58:07 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f401re.hex
+ 
+10:01:31 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+10:01:31 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    696	      8	   1568	   2272	    8e0	stm32f401re.elf
+Finished building: default.size.stdout
+Finished building: stm32f401re.hex
+Finished building: stm32f401re.bin
+ 
+ 
+ 
+Finished building: stm32f401re.list
+ 
+10:04:05 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+10:04:05 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f401re.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\stm32f401re\stm32f401re\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f401re.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f401re.elf  > "stm32f401re.list"
+arm-none-eabi-objcopy  -O ihex  stm32f401re.elf  "stm32f401re.hex"
+arm-none-eabi-objcopy  -O binary  stm32f401re.elf  "stm32f401re.bin"
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+Finished building: stm32f401re.list
+ 
+Finished building: stm32f401re.hex
+Finished building: stm32f401re.bin
+ 
+ 
+ 
+12:11:29 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+12:11:30 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:01:38 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:01:38 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:09:00 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:09:00 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:09:33 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:09:33 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:12:18 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:12:18 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:13:14 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:13:14 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:16:32 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:16:32 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:24:32 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:24:32 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:24:50 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:24:50 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:25:55 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:25:56 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:27:41 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from ../Src/main.c:23:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+13:27:43 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:28:06 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:28:06 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:28:38 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:28:38 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:30:16 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:30:17 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:36:10 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:36:10 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:36:21 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:36:21 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:37:14 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:37:14 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:37:51 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:37:51 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:38:17 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:38:18 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:39:01 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:39:01 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:43:31 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:43:31 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:43:47 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:43:48 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:47:25 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:47:25 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:47:38 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:47:38 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:47:54 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:47:54 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:48:37 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:48:37 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:49:42 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:49:42 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:52:56 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+13:52:56 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:53:54 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:53:54 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:54:02 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:54:02 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:56:37 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:56:38 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:58:26 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:58:26 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:59:17 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:59:17 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:59:27 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:59:27 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+13:59:32 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+13:59:32 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+14:00:51 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:23:10: fatal error: stm32f103x6.h: No such file or directory
+ #include <stm32f103x6.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:00:51 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:02:54 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+15:02:55 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:03:59 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.list
+Finished building: stm32f103c6.bin
+ 
+ 
+15:04:00 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:05:20 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+15:05:20 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:05:44 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+15:05:44 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:05:51 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+15:05:51 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+15:12:51 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+Finished building: stm32f103c6.list
+Finished building: stm32f103c6.bin
+ 
+ 
+ 
+15:12:52 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+16:06:42 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+Finished building: stm32f103c6.list
+Finished building: stm32f103c6.bin
+ 
+ 
+ 
+16:06:43 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+16:07:23 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+Finished building: stm32f103c6.list
+ 
+Finished building: stm32f103c6.bin
+ 
+ 
+16:07:23 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+16:59:53 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+16:59:54 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:40:12 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+Finished building: stm32f103c6.list
+ 
+Finished building: stm32f103c6.bin
+ 
+ 
+18:40:12 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:42:11 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+18:42:12 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:44:56 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+../Src/main.c: In function 'main':
+../Src/main.c:27:13: error: 'UART' undeclared (first use in this function); did you mean 'USART3'?
+ cnf.Length =UART
+             ^~~~
+             USART3
+../Src/main.c:27:13: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:28:1: error: expected ';' before 'mcal_uart_init'
+ mcal_uart_init(conf)
+ ^~~~~~~~~~~~~~
+../Src/main.c:25:11: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+ UART_CONF cnf;
+           ^~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:44:56 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:45:15 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+../Src/main.c:29:16: error: 'conf' undeclared (first use in this function); did you mean 'cnf'?
+ mcal_uart_init(conf)
+                ^~~~
+                cnf
+../Src/main.c:29:16: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:32:5: error: expected ';' before 'while'
+     while(1)
+     ^~~~~
+../Src/main.c:25:11: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+ UART_CONF cnf;
+           ^~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:45:15 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:49:51 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: error: 'USART1_BASE' undeclared (first use in this function); did you mean 'USART_R'?
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+../Src/main.c:33:17: error: 'UART_' undeclared (first use in this function); did you mean 'USART_R'?
+ cnf.hwFlowCtl = UART_
+                 ^~~~~
+                 USART_R
+../Src/main.c:34:1: error: expected ';' before 'mcal_uart_init'
+ mcal_uart_init(conf)
+ ^~~~~~~~~~~~~~
+../Src/main.c:25:11: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+ UART_CONF cnf;
+           ^~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:49:52 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:50:00 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: error: 'USART1_BASE' undeclared (first use in this function); did you mean 'USART_R'?
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+../Src/main.c:34:16: error: 'conf' undeclared (first use in this function); did you mean 'cnf'?
+ mcal_uart_init(conf)
+                ^~~~
+                cnf
+../Src/main.c:37:5: error: expected ';' before 'while'
+     while(1)
+     ^~~~~
+../Src/main.c:25:11: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+ UART_CONF cnf;
+           ^~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:50:00 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:50:10 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: error: 'USART1_BASE' undeclared (first use in this function); did you mean 'USART_R'?
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+../Src/main.c:34:17: error: 'CNF' undeclared (first use in this function)
+ mcal_uart_init(&CNF);
+                 ^~~
+../Src/main.c:25:11: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+ UART_CONF cnf;
+           ^~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:50:10 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:50:19 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: error: 'USART1_BASE' undeclared (first use in this function); did you mean 'USART_R'?
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:50:19 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:52:12 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:0: warning: "USART1" redefined
+ #define USART1    ((USART_R *)USART1_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:50:0: note: this is the location of the previous definition
+ #define USART1    0x40013800
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:132:0: warning: "USART2" redefined
+ #define USART2    ((USART_R *)USART2_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:51:0: note: this is the location of the previous definition
+ #define USART2    0x40004400
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:133:0: warning: "USART3" redefined
+ #define USART3    ((USART_R *)USART3_BASE)
+ 
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:52:0: note: this is the location of the previous definition
+ #define USART3    0x40004800
+ 
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:20:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: error: 'USART1_BASE' undeclared (first use in this function); did you mean 'USART_R'?
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/stm32f103x6.h:131:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define USART1    ((USART_R *)USART1_BASE)
+                               ^
+../Src/main.c:32:14: note: in expansion of macro 'USART1'
+ cnf.USARTx = USART1 ;
+              ^~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:52:12 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:53:14 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:13: note: in expansion of macro 'UART_DATA_BITS_9'
+ cnf.Length =UART_DATA_BITS_9 ;
+             ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:14: note: in expansion of macro 'UART_BARITY_EVEN'
+ cnf.Parity = UART_BARITY_EVEN;
+              ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:34: undefined reference to `mcal_uart_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:53:14 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:53:48 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:34: undefined reference to `mcal_uart_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:53:49 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:53:56 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:34: undefined reference to `mcal_uart_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:53:57 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:54:16 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:34: undefined reference to `mcal_uart_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:54:17 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:55:25 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+../Src/main.c:25:12: warning: variable 'cnf' set but not used [-Wunused-but-set-variable]
+  UART_CONF cnf;
+            ^~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+    596	      8	   1568	   2172	    87c	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.list
+Finished building: stm32f103c6.bin
+ 
+ 
+18:55:25 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:55:56 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+../Src/main.c:34:17: error: incompatible type for argument 1 of 'mcal_uart_init'
+  mcal_uart_init(cnf);
+                 ^~~
+In file included from ../Src/main.c:21:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:96:6: note: expected 'UART_CONF * {aka struct <anonymous> *}' but argument is of type 'UART_CONF {aka struct <anonymous>}'
+ void mcal_uart_init(UART_CONF* conf);
+      ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:55:57 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+18:56:06 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:34: undefined reference to `mcal_uart_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:56:07 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+09:20:58 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+../Src/main.c:35:22: error: 'DATA' undeclared (first use in this function)
+  mcal_uart_send_data(DATA, UARTx)
+                      ^~~~
+../Src/main.c:35:22: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:35:28: error: 'UARTx' undeclared (first use in this function); did you mean 'USART3'?
+  mcal_uart_send_data(DATA, UARTx)
+                            ^~~~~
+                            USART3
+../Src/main.c:38:2: error: expected ';' before 'while'
+  while(1)
+  ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:20:58 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+09:38:20 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+../Src/main.c:35:22: error: 'DATA' undeclared (first use in this function)
+  mcal_uart_send_data(DATA, UARTx)
+                      ^~~~
+../Src/main.c:35:22: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:35:28: error: 'UARTx' undeclared (first use in this function); did you mean 'USART3'?
+  mcal_uart_send_data(DATA, UARTx)
+                            ^~~~~
+                            USART3
+../Src/main.c:38:2: error: expected ';' before 'while'
+  while(1)
+  ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:38:20 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+09:38:55 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:27:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:29:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+../Src/main.c:36:22: error: 'DATA' undeclared (first use in this function)
+  mcal_uart_send_data(DATA, UARTx)
+                      ^~~~
+../Src/main.c:36:22: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:36:28: error: 'UARTx' undeclared (first use in this function); did you mean 'USART3'?
+  mcal_uart_send_data(DATA, UARTx)
+                            ^~~~~
+                            USART3
+../Src/main.c:39:2: error: expected ';' before 'while'
+  while(1)
+  ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:38:56 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 
+09:40:49 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:31:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:33:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:38: undefined reference to `mcal_uart_init'
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:39: undefined reference to `mcal_uart_pin_init'
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:40: undefined reference to `mcal_uart_send_data'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:40:50 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-size   stm32f401re.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	stm32f401re.elf
+Finished building: default.size.stdout
+ 

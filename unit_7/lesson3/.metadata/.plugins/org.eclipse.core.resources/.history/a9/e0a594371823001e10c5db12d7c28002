@@ -1,0 +1,31 @@
+/*
+ * gpio_driver.c
+ *
+ *  Created on: Jul 15, 2023
+ *      Author: abdom
+ */
+
+
+#include <stdint.h>
+#include <stdlib.h>
+#include <stm32f103x6.h>
+#include <gpio_driver.h>
+
+void MCAL_GPIO_INIT			(GPIOx_R* GPIOx , GPIO_PinConfig_t *PinConfig)
+{
+	volatile uint8_t* configreg = NULL;
+	configreg = (PinConfig->GPIO_PinNumber < pin8)? &GPIOx->CRL : &GPIOx->CRH ;
+
+
+
+
+}
+
+
+void MCAL_GPIO_DEINIT		(GPIOx_R* GPIOx);
+uint8_t MCAL_GPIO_READPIN	(GPIOx_R* GPIOx , uint8_t pinNumper);
+uint8_t MCAL_GPIO_READPORT	(GPIOx_R* GPIOx);
+void MCAL_GPIO_WRITEPIN		(GPIOx_R* GPIOx , uint8_t pinNumper , uint8_t Value);
+void MCAL_GPIO_WRITEPORT  	(GPIOx_R* GPIOx , uint8_t Value);
+void MCAL_GPIO_TOGGLEPIN	(GPIOx_R* GPIOx , uint8_t pinNumper);
+void MCAL_GPIO_LOCKPIN		(GPIOx_R* GPIOx , uint8_t pinNumper);

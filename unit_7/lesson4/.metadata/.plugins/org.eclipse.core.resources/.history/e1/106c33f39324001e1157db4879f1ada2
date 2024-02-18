@@ -1,0 +1,28 @@
+/*
+ * EXTI_driver.c
+ *
+ *  Created on: Jul 17, 2023
+ *      Author: abdom
+ */
+
+#include <stm32f103x6.h>
+#include <EXTI_driver.h>
+#include <stdint.h>
+#include <gpio_driver.h>
+
+
+
+void MCAL_EXTI_INIT(EXTI_S *exti_conf)
+{
+	//1 - init pin as an input pin
+	GPIO_PinConfig_t pin_conf ;
+	pin_conf.GPIO_MODE = GPIO_MODE_INPUT_FLOTING;
+	pin_conf.GPIO_PinNumber = conf->EXTI_PIN;
+	MCAL_GPIO_INIT(exti_conf->EXTI_PORT, *pin_conf);
+
+
+
+
+}
+void MCAL_EXTI_DEINIT(void);
+void MCAL_EXTI_UPDATE(EXTI_S *conf);

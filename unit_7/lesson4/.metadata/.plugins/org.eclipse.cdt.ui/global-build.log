@@ -1,0 +1,708 @@
+09:53:38 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1552	      8	   1568	   3128	    c38	drivers.elf
+Finished building: default.size.stdout
+ 
+10:04:47 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1552	      8	   1568	   3128	    c38	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+Finished building: drivers.bin
+ 
+ 
+ 
+10:07:44 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+ 
+Finished building: drivers.bin
+ 
+ 
+10:16:51 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+arm-none-eabi-gcc "../stm32f103x6_drivers/gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/gpio_driver.d" -MT"stm32f103x6_drivers/gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/gpio_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../stm32f103x6_drivers/gpio_driver.c:12:0:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+../stm32f103x6_drivers/gpio_driver.c: In function 'pos':
+../stm32f103x6_drivers/gpio_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+ 
+Finished building: drivers.bin
+ 
+ 
+10:25:43 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1564	      8	   1568	   3140	    c44	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.bin
+ 
+Finished building: drivers.list
+ 
+ 
+10:26:07 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1580	      8	   1568	   3156	    c54	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.bin
+ 
+Finished building: drivers.list
+ 
+ 
+10:29:25 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1652	      8	   1568	   3228	    c9c	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+Finished building: drivers.bin
+ 
+ 
+ 
+10:33:25 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.bin
+ 
+Finished building: drivers.list
+ 
+ 
+10:34:53 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1736	      8	   1568	   3312	    cf0	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+10:37:53 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1748	      8	   1568	   3324	    cfc	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+ 
+Finished building: drivers.bin
+ 
+ 
+10:42:22 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	      8	   1568	   3248	    cb0	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+10:44:21 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1752	      8	   1568	   3328	    d00	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+10:48:00 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../stm32f103x6_drivers/EXTI_driver.c:9:0:
+../stm32f103x6_drivers/EXTI_driver.c: In function 'MCAL_EXTI_INIT':
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:33:20: warning: comparison between pointer and integer
+ #define port(x)  (x==GPIOA)?0: \
+                    ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:33:19: note: in definition of macro 'port'
+ #define port(x)  (x==GPIOA)?0: \
+                   ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:34:8: warning: comparison between pointer and integer
+      (x==GPIOB)?1: \
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:34:7: note: in definition of macro 'port'
+      (x==GPIOB)?1: \
+       ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:35:8: warning: comparison between pointer and integer
+      (x==GPIOC)?2: \
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:35:7: note: in definition of macro 'port'
+      (x==GPIOC)?2: \
+       ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:36:8: warning: comparison between pointer and integer
+      (x==GPIOD)?3: 0
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                           ~~~~~~~~~~~~         ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT &0xf) << y);
+                      ^~~~
+make: *** [stm32f103x6_drivers/subdir.mk:21: stm32f103x6_drivers/EXTI_driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:48:09 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../stm32f103x6_drivers/EXTI_driver.c:9:0:
+../stm32f103x6_drivers/EXTI_driver.c: In function 'MCAL_EXTI_INIT':
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:33:20: warning: comparison between pointer and integer
+ #define port(x)  (x==GPIOA)?0: \
+                    ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:33:19: note: in definition of macro 'port'
+ #define port(x)  (x==GPIOA)?0: \
+                   ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:34:8: warning: comparison between pointer and integer
+      (x==GPIOB)?1: \
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:34:7: note: in definition of macro 'port'
+      (x==GPIOB)?1: \
+       ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:35:8: warning: comparison between pointer and integer
+      (x==GPIOC)?2: \
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                           ~~~~~~~~~~~~         ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:35:7: note: in definition of macro 'port'
+      (x==GPIOC)?2: \
+       ^
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:36:8: warning: comparison between pointer and integer
+      (x==GPIOD)?3: 0
+        ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                      ^~~~
+../stm32f103x6_drivers/EXTI_driver.c:36:48: error: invalid operands to binary & (have 'GPIOx_R * {aka struct <anonymous> *}' and 'int')
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                           ~~~~~~~~~~~~         ^
+../stm32f103x6_drivers/EXTI_driver.c:36:22: note: in expansion of macro 'port'
+  AFIO->EXTICR[x] |= (port(exti_conf->EXTI_PORT & 0xf) << y);
+                      ^~~~
+make: *** [stm32f103x6_drivers/subdir.mk:21: stm32f103x6_drivers/EXTI_driver.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+10:48:22 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1752	      8	   1568	   3328	    d00	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.list
+ 
+Finished building: drivers.bin
+ 
+ 
+10:48:42 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1756	      8	   1568	   3332	    d04	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.list
+Finished building: drivers.bin
+ 
+ 
+10:51:41 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      8	   1568	   3336	    d08	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.bin
+ 
+Finished building: drivers.list
+ 
+ 
+10:54:22 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      8	   1568	   3336	    d08	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.list
+Finished building: drivers.bin
+ 
+ 
+11:09:44 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/gpio_driver.d" -MT"stm32f103x6_drivers/gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/gpio_driver.o"
+In file included from ../stm32f103x6_drivers/gpio_driver.c:12:0:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+../stm32f103x6_drivers/gpio_driver.c: In function 'pos':
+../stm32f103x6_drivers/gpio_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      8	   1568	   3336	    d08	drivers.elf
+Finished building: drivers.list
+Finished building: default.size.stdout
+Finished building: drivers.bin
+ 
+ 
+ 
+11:09:50 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      8	   1568	   3336	    d08	drivers.elf
+Finished building: default.size.stdout
+ 
+11:13:44 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1772	      8	   1568	   3348	    d14	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+11:13:56 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1772	      8	   1568	   3348	    d14	drivers.elf
+Finished building: default.size.stdout
+ 
+11:13:57 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1772	      8	   1568	   3348	    d14	drivers.elf
+Finished building: default.size.stdout
+ 
+11:16:39 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1784	      8	   1568	   3360	    d20	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+ 
+Finished building: drivers.list
+ 
+11:49:23 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/gpio_driver.d" -MT"stm32f103x6_drivers/gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/gpio_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../stm32f103x6_drivers/gpio_driver.c:12:0:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../Src/main.c:23:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+../stm32f103x6_drivers/gpio_driver.c: In function 'pos':
+../stm32f103x6_drivers/gpio_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1784	      8	   1568	   3360	    d20	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+11:55:22 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1784	      8	   1568	   3360	    d20	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 

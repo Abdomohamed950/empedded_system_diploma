@@ -1,13 +1,110 @@
-16:52:34 **** Build of configuration Debug for project blink_lid ****
+23:56:06 **** Incremental Build of configuration Debug for project blink_lid ****
 make -j4 all 
-arm-none-eabi-size   blink_lid.elf 
-arm-none-eabi-objcopy  -O ihex  blink_lid.elf  "blink_lid.hex"
-   text	   data	    bss	    dec	    hex	filename
-    672	      8	   1568	   2248	    8c8	blink_lid.elf
-Finished building: default.size.stdout
- 
-Finished building: blink_lid.hex
- 
+Src/subdir.mk:32: warning: overriding recipe for target 'Src/main.o'
+Src/subdir.mk:30: warning: ignoring old recipe for target 'Src/main.o'
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o" "../Src/main.s"
+main.c: Assembler messages:
+main.c:2: Error: .def pseudo-op only available with -mccs flag.
+main.c:2: Error: bad instruction `___main'
+main.c:2: Error: unknown pseudo-op: `.scl'
+main.c:2: Error: Missing symbol name in directive
+main.c:2: Error: unrecognized symbol type "32"
+main.c:2: Error: unknown pseudo-op: `.endef'
+main.c:5: Error: .def pseudo-op only available with -mccs flag.
+main.c:5: Error: bad instruction `_main'
+main.c:5: Error: unknown pseudo-op: `.scl'
+main.c:5: Error: Missing symbol name in directive
+main.c:5: Error: unrecognized symbol type "32"
+main.c:5: Error: unknown pseudo-op: `.endef'
+main.c:9: Error: bad instruction `pushl %ebp'
+main.c:12: Error: bad instruction `movl %esp,%ebp'
+main.c:14: Error: bad instruction `pushl %edi'
+main.c:15: Error: bad instruction `pushl %esi'
+main.c:16: Error: bad instruction `pushl %ebx'
+main.c:17: Error: bad instruction `andl $-16,%esp'
+main.c:18: Error: bad instruction `subl $48,%esp'
+main.c:22: Error: bad instruction `call ___main'
+main.c:23: Error: bad instruction `movl $1073877016,%ecx'
+main.c:24: Error: bad instruction `movl $1073877016,%eax'
+main.c:25: Error: bad instruction `movl 4(%eax),%edx'
+main.c:26: Error: bad instruction `movl (%eax),%eax'
+main.c:27: Error: bad instruction `movl %eax,%edi'
+main.c:28: Error: bad instruction `orl $4,%edi'
+main.c:29: Error: bad instruction `movl %edi,%ebx'
+main.c:30: Error: bad instruction `movl %edx,%eax'
+main.c:31: Error: bad instruction `orb $0,%ah'
+main.c:32: Error: bad instruction `movl %eax,%esi'
+main.c:33: Error: bad instruction `movl %ebx,(%ecx)'
+main.c:34: Error: bad instruction `movl %esi,4(%ecx)'
+main.c:35: Error: bad instruction `movl $1073809412,%ecx'
+main.c:36: Error: bad instruction `movl $1073809412,%eax'
+main.c:37: Error: bad instruction `movl 4(%eax),%edx'
+main.c:38: Error: bad instruction `movl (%eax),%eax'
+main.c:39: Error: bad instruction `movl %eax,%esi'
+main.c:40: Error: bad instruction `andl $-8388609,%esi'
+main.c:41: Error: bad instruction `movl %esi,24(%esp)'
+main.c:42: Error: bad instruction `movl %edx,%eax'
+main.c:43: Error: bad instruction `andb $255,%ah'
+main.c:44: Error: bad instruction `movl %eax,28(%esp)'
+main.c:45: Error: bad instruction `movl 24(%esp),%eax'
+main.c:46: Error: bad instruction `movl 28(%esp),%edx'
+main.c:47: Error: bad instruction `movl %eax,(%ecx)'
+main.c:48: Error: bad instruction `movl %edx,4(%ecx)'
+main.c:49: Error: bad instruction `movl $1073809412,%ecx'
+main.c:50: Error: bad instruction `movl $1073809412,%eax'
+main.c:51: Error: bad instruction `movl 4(%eax),%edx'
+main.c:52: Error: bad instruction `movl (%eax),%eax'
+main.c:53: Error: bad instruction `movl %eax,%ebx'
+main.c:54: Error: bad instruction `orl $2097152,%ebx'
+main.c:55: Error: bad instruction `movl %ebx,16(%esp)'
+main.c:56: Error: bad instruction `movl %edx,%eax'
+main.c:57: Error: bad instruction `orb $0,%ah'
+main.c:58: Error: bad instruction `movl %eax,20(%esp)'
+main.c:59: Error: bad instruction `movl 16(%esp),%eax'
+main.c:60: Error: bad instruction `movl 20(%esp),%edx'
+main.c:61: Error: bad instruction `movl %eax,(%ecx)'
+main.c:62: Error: bad instruction `movl %edx,4(%ecx)'
+main.c:64: Error: bad instruction `movl $1073809420,%ecx'
+main.c:65: Error: bad instruction `movl $1073809420,%eax'
+main.c:66: Error: bad instruction `movl 4(%eax),%edx'
+main.c:67: Error: bad instruction `movl (%eax),%eax'
+main.c:68: Error: bad instruction `movl %eax,%esi'
+main.c:69: Error: bad instruction `orl $8192,%esi'
+main.c:70: Error: bad instruction `movl %esi,8(%esp)'
+main.c:71: Error: bad instruction `movl %edx,%eax'
+main.c:72: Error: bad instruction `orb $0,%ah'
+main.c:73: Error: bad instruction `movl %eax,12(%esp)'
+main.c:74: Error: bad instruction `movl 8(%esp),%eax'
+main.c:75: Error: bad instruction `movl 12(%esp),%edx'
+main.c:76: Error: bad instruction `movl %eax,(%ecx)'
+main.c:77: Error: bad instruction `movl %edx,4(%ecx)'
+main.c:78: Error: bad instruction `movl $0,44(%esp)'
+main.c:79: Error: bad instruction `jmp L2'
+main.c:81: Error: bad instruction `addl $1,44(%esp)'
+main.c:83: Error: bad instruction `cmpl $4999,44(%esp)'
+main.c:84: Error: bad instruction `jle L3'
+main.c:85: Error: bad instruction `movl $1073809420,%ecx'
+main.c:86: Error: bad instruction `movl $1073809420,%eax'
+main.c:87: Error: bad instruction `movl 4(%eax),%edx'
+main.c:88: Error: bad instruction `movl (%eax),%eax'
+main.c:89: Error: bad instruction `movl %eax,%edi'
+main.c:90: Error: bad instruction `andl $-8193,%edi'
+main.c:91: Error: bad instruction `movl %edi,(%esp)'
+main.c:92: Error: bad instruction `movl %edx,%eax'
+main.c:93: Error: bad instruction `andb $255,%ah'
+main.c:94: Error: bad instruction `movl %eax,4(%esp)'
+main.c:95: Error: bad instruction `movl (%esp),%eax'
+main.c:96: Error: bad instruction `movl 4(%esp),%edx'
+main.c:97: Error: bad instruction `movl %eax,(%ecx)'
+main.c:98: Error: bad instruction `movl %edx,4(%ecx)'
+main.c:99: Error: bad instruction `movl $0,40(%esp)'
+main.c:100: Error: bad instruction `jmp L4'
+main.c:102: Error: bad instruction `addl $1,40(%esp)'
+main.c:104: Error: bad instruction `cmpl $4999,40(%esp)'
+main.c:105: Error: bad instruction `jle L5'
+main.c:106: Error: bad instruction `jmp L6'
+make: *** [Src/subdir.mk:32: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
 
-16:52:34 Build Finished. 0 errors, 0 warnings. (took 717ms)
+23:56:06 Build Failed. 100 errors, 2 warnings. (took 668ms)
 

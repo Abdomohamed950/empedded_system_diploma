@@ -27,7 +27,7 @@
 #define CRH			*(volatile unsigned long long *) (GPIO_PA+0x04)
 #define ODR			*(volatile unsigned long long *) (GPIO_PA+0x0C)
 
-int main(void)
+void main(void)
 {
 	APB2ENR |=1<<2 ;
 	CRH &= ~(8<<20);

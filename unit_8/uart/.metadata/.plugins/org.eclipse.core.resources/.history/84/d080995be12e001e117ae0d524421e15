@@ -1,0 +1,30 @@
+/*
+ * gpio_driver.c
+ *
+ *  Created on: Jul 15, 2023
+ *      Author: abdom
+ */
+
+
+#include <stdint.h>
+#include <stdlib.h>
+#include <uart_driver.h>
+
+
+
+void uart_init(UART_CONF* conf)
+{
+	USART_R* usart = conf->USARTx ;
+	if(conf->USARTx == USART1)
+		RCC_USART1_CLK_EN();
+	else if(conf->USARTx == USART2)
+		RCC_USART2_CLK_EN();
+	else if(conf->USARTx == USART3)
+		RCC_USART3_CLK_EN();
+	//1. Enable the USART by writing the UE bit in USART_CR1 register to 1.
+	usart->CR1 |= UART_UE ;
+	//2. Program the M bit in USART_CR1 to define the word length.
+	usart->CR1 |= conf->Length ;
+
+}
+

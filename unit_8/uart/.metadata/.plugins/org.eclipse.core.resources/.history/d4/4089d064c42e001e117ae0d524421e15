@@ -1,0 +1,21 @@
+/*
+ * UART_DRIVER.c
+ *
+ *  Created on: Jul 24, 2023
+ *      Author: abdom
+ */
+
+
+#include <stm32f103x6.h>
+#include <UART_DRIVER.h>
+#include <EXTI_driver.h>
+
+
+
+void usart_init(usart_conf* usart)
+{
+	EXTI_S x;
+	
+}
+
+

@@ -1,0 +1,35 @@
+09:40:49 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:21:0:
+../Src/main.c: In function 'main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:75:29: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_DATA_BITS_9    (uint32_t) (1<<12)
+                             ^
+../Src/main.c:31:14: note: in expansion of macro 'UART_DATA_BITS_9'
+  cnf.Length =UART_DATA_BITS_9 ;
+              ^~~~~~~~~~~~~~~~
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/stm32f103x6_drivers/inc/uart_driver.h:58:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define UART_BARITY_EVEN     (uint32_t) (1<<10)
+                              ^
+../Src/main.c:33:15: note: in expansion of macro 'UART_BARITY_EVEN'
+  cnf.Parity = UART_BARITY_EVEN;
+               ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\uart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:38: undefined reference to `mcal_uart_init'
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:39: undefined reference to `mcal_uart_pin_init'
+D:/embedded system/sections/empedded_system_diploma/unit_8/uart/stm32f103c6/Debug/../Src/main.c:40: undefined reference to `mcal_uart_send_data'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: stm32f103c6.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+09:40:50 Build Failed. 4 errors, 4 warnings. (took 1s.5ms)
+

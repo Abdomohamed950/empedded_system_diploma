@@ -1,0 +1,30 @@
+13:33:46 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson3/drivers/stm32f103c6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:21:0:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson3/drivers/stm32f103c6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson3/drivers/stm32f103c6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -gdwarf-2 -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson3\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O ihex  drivers.elf  "drivers.hex"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1324	      8	   1568	   2900	    b54	drivers.elf
+Finished building: default.size.stdout
+Finished building: drivers.hex
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+ 
+
+13:33:47 Build Finished. 0 errors, 2 warnings. (took 952ms)
+

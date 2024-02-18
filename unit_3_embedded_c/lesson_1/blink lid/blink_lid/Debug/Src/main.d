@@ -1,3 +1,1 @@
-Src/main.o: ../Src/main.c ../Inc/platform_type.h
-
-../Inc/platform_type.h:
+Src/main.o: ../Src/main.s

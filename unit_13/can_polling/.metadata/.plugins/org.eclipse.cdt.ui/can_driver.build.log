@@ -1,0 +1,10 @@
+17:52:02 **** Incremental Build of configuration Debug for project can_driver ****
+make -j4 all 
+arm-none-eabi-size   can_driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8196	     20	   1684	   9900	   26ac	can_driver.elf
+Finished building: default.size.stdout
+ 
+
+17:52:02 Build Finished. 0 errors, 0 warnings. (took 236ms)
+

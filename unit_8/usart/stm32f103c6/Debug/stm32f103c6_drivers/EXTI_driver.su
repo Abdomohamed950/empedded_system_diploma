@@ -1,0 +1,3 @@
+EXTI_driver.c:14:9:getLog	24	static
+EXTI_driver.c:25:6:MCAL_EXTI_INIT	32	static
+EXTI_driver.c:90:6:MCAL_EXTI_DEINIT	4	static

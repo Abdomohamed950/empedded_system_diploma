@@ -1,0 +1,40 @@
+19:22:59 **** Incremental Build of configuration Debug for project stm32f103c6 ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103c6_drivers/uart_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103c6_drivers/uart_driver.d" -MT"stm32f103c6_drivers/uart_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103c6_drivers/uart_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103c6_drivers/uart_driver.c:12:
+D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+In file included from ../Src/main.c:22:0:
+D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_8/usart/stm32f103c6/stm32f103c6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+../stm32f103c6_drivers/uart_driver.c: In function 'get_sys_clk':
+../stm32f103c6_drivers/uart_driver.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -o "stm32f103c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_8\usart\stm32f103c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f103c6.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f103c6.elf  > "stm32f103c6.list"
+arm-none-eabi-objcopy  -O binary  stm32f103c6.elf  "stm32f103c6.bin"
+arm-none-eabi-size   stm32f103c6.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1672	      8	   1568	   3248	    cb0	stm32f103c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f103c6.bin
+Finished building: stm32f103c6.list
+ 
+ 
+
+19:23:00 Build Finished. 0 errors, 5 warnings. (took 620ms)
+

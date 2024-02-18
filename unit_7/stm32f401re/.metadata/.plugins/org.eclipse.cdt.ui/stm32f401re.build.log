@@ -1,0 +1,12 @@
+13:06:26 **** Incremental Build of configuration Debug for project stm32f401re ****
+make -j4 all 
+arm-none-eabi-gcc "../STM32F401RE_DRIVER/GPIO_DRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/stm32f401re/stm32f401re/STM32F401RE_DRIVER/INC" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F401RE_DRIVER/GPIO_DRIVER.d" -MT"STM32F401RE_DRIVER/GPIO_DRIVER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "STM32F401RE_DRIVER/GPIO_DRIVER.o"
+../STM32F401RE_DRIVER/GPIO_DRIVER.c: In function 'gpio_init':
+../STM32F401RE_DRIVER/GPIO_DRIVER.c:16:1: error: expected identifier before '}' token
+ }
+ ^
+make: *** [STM32F401RE_DRIVER/subdir.mk:18: STM32F401RE_DRIVER/GPIO_DRIVER.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+13:06:26 Build Failed. 2 errors, 0 warnings. (took 236ms)
+

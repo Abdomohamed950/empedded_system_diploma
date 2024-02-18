@@ -1,0 +1,28 @@
+11:55:22 **** Incremental Build of configuration Debug for project drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../stm32f103x6_drivers/EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"stm32f103x6_drivers/EXTI_driver.d" -MT"stm32f103x6_drivers/EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "stm32f103x6_drivers/EXTI_driver.o"
+In file included from D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/EXTI_driver.h:17:0,
+                 from ../stm32f103x6_drivers/EXTI_driver.c:9:
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:48:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_MODE_define
+  
+D:/embedded system/sections/empedded_system_diploma/unit_7/lesson4/drivers/stm32f103x6_drivers/inc/gpio_driver.h:69:1: warning: "/*" within comment [-Wcomment]
+ /*@ref GPIO_SPEED_define
+  
+arm-none-eabi-gcc -o "drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\embedded system\sections\empedded_system_diploma\unit_7\lesson4\drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: drivers.elf
+ 
+arm-none-eabi-objdump -h -S  drivers.elf  > "drivers.list"
+arm-none-eabi-objcopy  -O binary  drivers.elf  "drivers.bin"
+arm-none-eabi-size   drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1784	      8	   1568	   3360	    d20	drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: drivers.bin
+Finished building: drivers.list
+ 
+ 
+
+11:55:23 Build Finished. 0 errors, 2 warnings. (took 627ms)
+

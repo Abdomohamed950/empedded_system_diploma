@@ -1,0 +1,41 @@
+/*
+ * EXTI_driver.h
+ *
+ *  Created on: Jul 17, 2023
+ *      Author: abdom
+ */
+
+#ifndef INC_EXTI_DRIVER_H_
+#define INC_EXTI_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+#include<stdint.h>
+#include<stdlib.h>
+#include<stm32f103x6.h>
+//-----------------------------
+//User type definitions (structures)
+//-----------------------------
+typedef struct
+{
+	GPIOx_R* EXTI_PORT;
+	uint16_t EXTI_PIN;
+}EXTI_S;
+//-----------------------------
+//Macros Configuration References
+//-----------------------------
+/*@ref Module_REF_NAME_define
+*/
+/*
+* ===============================================
+* APIs Supported by "MCAL GPIO DRIVER"
+*
+* ===============================================
+*/
+void MCAL_EXTI_INIT(EXTI_S *conf);
+void MCAL_EXTI_DEINIT(void);
+void MCAL_EXTI_UPDATE(EXTI_S *conf);
+
+
+#endif /* INC_EXTI_DRIVER_H_ */

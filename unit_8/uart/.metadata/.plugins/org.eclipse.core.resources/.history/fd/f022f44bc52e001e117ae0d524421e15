@@ -1,0 +1,17 @@
+/*
+ * gpio_driver.c
+ *
+ *  Created on: Jul 15, 2023
+ *      Author: abdom
+ */
+
+
+#include <stdint.h>
+#include <stdlib.h>
+#include <stm32f103x6.h>
+#include <gpio_driver.h>
+
+void MCAL_GPIO_INIT			(GPIOx_R* GPIOx , GPIO_PinConfig_t* PinConfig)
+{
+	PinConfig
+}
